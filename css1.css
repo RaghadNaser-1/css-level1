@@ -1,0 +1,24 @@
+body {
+    background-color: rgb(246, 246, 136);
+
+}
+article {
+    background-color: white;
+    border: 1px solid rgb(142, 141, 141);
+    padding: 5px;
+    width: 75%;
+}
+#third {
+    color: rgb(226, 58, 43);
+    border: 2px dashed rgb(218, 14, 14);
+}
+span {
+    background-color: yellow;
+}
+.orange {
+    background-color: orange;
+}
+
+#third p {
+    border: 2px dashed rgb(218, 17, 17);
+}
