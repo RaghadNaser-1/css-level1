@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+                 
+        .icon{
+            width: 25px;
+            height: 25px;
+        }
+        #r-nav{
+            display: flex;
+            align-items: center;
+        }
+        #r-nav h4,img{
+            padding: 10px;
+        }
+        #navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+            margin: 5px;
+            box-shadow: 0 1px 1px 0 black;
+        }
+        .logo{
+            width: 50px;
+            height: 50px;
+        }
+        #l-nav{
+            display: flex;
+            align-items: center;
+        }
+        #pages{
+            display: flex;
+            background-color: rgb(210, 251, 251);  
+            justify-content: center; 
+        }
+        #pages p{
+            padding: 5px;
+            margin: 5px;
+            width: 150px;
+            height: 30px;
+            background-color: white;
+            text-align: center;
+            padding-top: 10px;
+        }
+        #rate{
+            background-color: rgb(210, 251, 251);
+            text-align: center;
+            width: 50%;
+            padding: 5px;
+            margin: 5px;
+        }
+        .star{
+            width: 300px;
+            height: 200px;
+        }
+        #up{
+            display: flex;
+        }
+        #stars{
+            /* padding: 5px;
+            margin: 5px;    */
+            margin-left: 20px;
+            width: 50%;
+        }
+        #left{
+            width: 50%;
+            margin-left: 25px;
+        }
+        #right{
+            width: 50%;
+        }
+        #user-p{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        #star-user{
+            width: 125px;
+            height: 50px;
+        }
+        #user{
+            display: flex;
+        }
+        #username h3{
+            margin-left: 20px;
+            margin-bottom: -10px;
+        }
+        #paragraph{
+            width: 85%;
+        }
+        #main{
+            display: flex;
+            margin: 5px;
+        }
+        #head img{
+            width: 100px;
+            height: 50px;
+        }
+        #head {
+            display: flex;
+            align-items: center;
+        }
+        input{
+            width: 300px;
+            height: 30px;
+            margin: 5px;
+            border: 1px solid gray;
+        }
+        #re{
+            height: 100px;
+        }
+        button{
+            width: 100px;
+            background-color: orange;
+            border: none;
+            padding: 5px;
+            margin-left: 210px;
+        }
+        @media screen and (max-width: 850px) {
+                    #main{flex-direction: column;}
+                    #pages{flex-wrap: wrap;}
+                    #up{flex-direction: column;
+                    width: 100%;}
+                    #paragraph{width: 100%;}
+                    #rate{width: 100%;}
+                    #stars{width: 100%; margin-left: 0px;}
+                    #right{ width: 100%;   }
+                    #left {width: 100%;}
+                    .star{width: 100%;}
+                    input{width: 100%;}
+                    #navbar{flex-direction: column;}
+                    #r-nav{flex-wrap: wrap;}
+                    
+                 }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div id="l-nav">
+            <img class="logo" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSOPxJoEKXjF7F6HeNNY5p1P7eaaIoWq4oUPrU7yC9Dg_mcx9CB" alt="logo">
+            <h2>KARMA</h2>
+        </div>
+        <div id="r-nav">
+            <h4>Home</h4>
+            <h4>Home</h4>
+            <h4>Home</h4>
+            <h4>Home</h4>
+            <h4>Home</h4>
+            <img class="icon" src="https://cdn-icons-png.flaticon.com/512/2889/2889676.png" alt="lock">
+            <img class="icon" src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-512.png" alt="search">
+        </div>
+
+    </div>
+    <div id="pages">
+        <p>Comments</p>
+        <p>Comments</p>
+        <p>Comments</p>
+        <p>Comments</p>
+    </div>
+    <div id="main">
+        <div id="left">
+            <div id="up">
+                <div id="rate">
+                    <h2>Overall</h2>
+                    <h1>4.0</h1>
+                    <p>(03 Reviews)</p>
+                </div>
+                <div id="stars">
+                    <h3>Based on 3 Reviews</h3>
+                    <img class="star" src="https://media.istockphoto.com/id/1199992297/cs/vektor/5-hv%C4%9Bzdi%C4%8Dek-hodnocen%C3%AD-na-b%C3%ADl%C3%A9m-pozad%C3%AD-%C5%A1ablona-zp%C4%9Btn%C3%A9-vazby-od-z%C3%A1kazn%C3%ADk%C5%AF-hodnocen%C3%AD-produktu.jpg?s=170667a&w=0&k=20&c=lLw8ItXawUyO8IVlDMzQQG7icqhgBi-tUvOxM915rDo=" alt="">
+                </div>
+            </div>
+            <div id="review">
+                <div id="review1">
+                    <div id="user">
+                        <img id="user-p" src="https://media.istockphoto.com/id/1315236014/photo/confident-mature-man-with-eyeglasses-and-hat.jpg?b=1&s=170667a&w=0&k=20&c=Ne06RMPhbLSNDd-Q-pm8N2xETkq11UOa5m11554dHHc=" alt="user-pic">
+                        <div id="username">
+                            <h3>Black Ruiz</h3>
+                            <img id="star-user" src="https://www.citypng.com/public/uploads/small/11670328491zfpc8lrihulrodc9df1di2wefdrq68mmz5uqadhjkohvhoq0tojs5yofq250sejlm0lqij7whtjg4cyxmj7tgu8rxbxogghk26ok.png" alt="stars-review">
+                        </div>
+                    </div>
+                    <div id="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mauris mi, tempus nec tincidunt eget, rhoncus at felis.
+                    Donec a eros quis turpis molestie dignissim. Sed ac nisl rhoncus massa euismod finibus. Pellentesque sit amet tempus metus,
+                    a varius lorem. Aenean porttitor ante pulvinar nisi euismod, at dictum est lobortis. 
+                    </div>
+                </div>
+                <div id="review1">
+                    <div id="user">
+                        <img id="user-p" src="https://media.istockphoto.com/id/1315236014/photo/confident-mature-man-with-eyeglasses-and-hat.jpg?b=1&s=170667a&w=0&k=20&c=Ne06RMPhbLSNDd-Q-pm8N2xETkq11UOa5m11554dHHc=" alt="user-pic">
+                        <div id="username">
+                            <h3>Black Ruiz</h3>
+                            <img id="star-user" src="https://www.citypng.com/public/uploads/small/11670328491zfpc8lrihulrodc9df1di2wefdrq68mmz5uqadhjkohvhoq0tojs5yofq250sejlm0lqij7whtjg4cyxmj7tgu8rxbxogghk26ok.png" alt="stars-review">
+                        </div>
+                    </div>
+                    <div id="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mauris mi, tempus nec tincidunt eget, rhoncus at felis.
+                    Donec a eros quis turpis molestie dignissim. Sed ac nisl rhoncus massa euismod finibus. Pellentesque sit amet tempus metus,
+                    a varius lorem. Aenean porttitor ante pulvinar nisi euismod, at dictum est lobortis. 
+                    </div>
+                </div>
+                <div id="review1">
+                    <div id="user">
+                        <img id="user-p" src="https://media.istockphoto.com/id/1315236014/photo/confident-mature-man-with-eyeglasses-and-hat.jpg?b=1&s=170667a&w=0&k=20&c=Ne06RMPhbLSNDd-Q-pm8N2xETkq11UOa5m11554dHHc=" alt="user-pic">
+                        <div id="username">
+                            <h3>Black Ruiz</h3>
+                            <img id="star-user" src="https://www.citypng.com/public/uploads/small/11670328491zfpc8lrihulrodc9df1di2wefdrq68mmz5uqadhjkohvhoq0tojs5yofq250sejlm0lqij7whtjg4cyxmj7tgu8rxbxogghk26ok.png" alt="stars-review">
+                        </div>
+                    </div>
+                    <div id="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mauris mi, tempus nec tincidunt eget, rhoncus at felis.
+                    Donec a eros quis turpis molestie dignissim. Sed ac nisl rhoncus massa euismod finibus. Pellentesque sit amet tempus metus,
+                    a varius lorem. Aenean porttitor ante pulvinar nisi euismod, at dictum est lobortis. 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="right">
+            <h2>Add a Review</h2>
+            <div id="head">
+                <p>Your Rating</p>
+                <img src="https://www.citypng.com/public/uploads/small/11670328491zfpc8lrihulrodc9df1di2wefdrq68mmz5uqadhjkohvhoq0tojs5yofq250sejlm0lqij7whtjg4cyxmj7tgu8rxbxogghk26ok.png" alt="star">
+                <p>Outstanding</p>
+            </div>
+            <form action="#">
+                <input type="text" placeholder="Your Full Name"> <br>
+                <input type="email" name="email" id="e-mail" placeholder="Email Address"> <br>
+                <input type="number" placeholder="Phone Number"> <br>
+                <input id="re" type="text" placeholder="Review" > <br>
+                <button>Submit now</button>
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>

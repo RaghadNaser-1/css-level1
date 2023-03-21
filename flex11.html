@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #home {
+            display: flex;
+            align-items: center;
+            justify-content: right;    
+            padding: 5px;
+            margin: 5px; 
+           }
+           #list{
+            display: flex;
+            align-items: center;
+            justify-content: center;    
+            padding: 5px;
+            margin: 5px; 
+            margin-right: 200px;
+           }
+          #home h4{ margin: 10px;
+        margin-right: 15px;    
+        }
+        #right img{
+            width: 20px;
+            height: 20px;
+            padding: 5px;
+
+        }
+        #right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 200px;
+        }
+        ul {
+            list-style: none;
+            
+        }
+        #menu {
+            border: 1px solid black;
+            width: 250px;
+            margin-right:20px;
+        }
+        #menu img {
+            width: 20px;
+            height: 20px;
+            padding: 5px;
+        }
+        #m-head{
+            display: flex;
+            align-items: center;
+            background-color: rgb(126, 205, 8);
+
+        }
+        #search {
+            display: flex;
+            align-items: center;
+            /* padding: 5px; */
+            border: 1px solid black;
+            width: 600px;
+            justify-content: space-around;
+        }
+        #search p {
+            margin: 5px;
+        }
+        #part2{
+            display: flex;
+            justify-content: center;
+            }
+
+        #part2b{
+            margin-left: 20px;
+        }
+        #s-button{
+            background-color: rgb(126, 205, 8);
+            padding: 15px;
+        }
+        #search hr {
+            height: 30px;
+            margin: 10px;
+        }
+        #ask {
+            color: gray;
+        }
+        #t-img img {
+            width: 20px;
+            height: 20px;
+        }
+        #phone {
+            display: flex;
+            align-items: center;
+            margin-left:35px ;
+        }
+        #t-img{
+            background-color: gainsboro;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 50%;
+
+        }
+        #search-bar {
+            display: flex;
+        }
+        #pic-1 {
+            background-image: url(https://media.discordapp.net/attachments/1079359522650456105/1086932105461768202/banner.jpg?width=1087&height=538);
+            height: 450px;
+            /* background-size: cover; */
+        }
+        #l-text {
+            padding: 50px;
+
+        }
+        #l-text h1{
+            width: 250px;
+        }
+        button{
+            background-color: rgb(126, 205, 8);
+            padding: 10px;
+            width: 150px;
+            border: none;
+            font-weight: bold;
+            color: white;
+        }
+        #part3{
+            display: flex;
+            margin: 10px;
+            justify-content: center;
+        }
+        #item1 {
+            width: 270px;
+            height: 270px;
+            background-image: url(https://cdn.discordapp.com/attachments/1079359522650456105/1086932106359353454/cat-1.jpg);
+        }
+        #item2 {
+            width: 270px;
+            height: 270px;
+            background-image: url(https://cdn.discordapp.com/attachments/1079359522650456105/1086932106673922120/cat-2.jpg);
+        }
+        #item3 {
+            width: 270px;
+            height: 270px;
+            background-image: url(https://cdn.discordapp.com/attachments/1079359522650456105/1086932106959138846/cat-3.jpg);
+        }
+        #item4 {
+            width: 270px;
+            height: 270px;
+            background-image: url(https://cdn.discordapp.com/attachments/1079359522650456105/1086932107173052426/cat-4.jpg);
+        }
+        .item{
+            margin: 10px;
+            text-align: center;
+            align-items: end;
+            justify-content: center;
+            display: flex;
+
+        }
+        .item p {
+            width: 150px;
+            background-color: white;
+            height: 25px;
+            padding: 10px;
+            
+        }
+        @media screen and (max-width: 900px) {
+            #home {flex-direction: column;
+                justify-content: center;}
+            #part2{flex-direction: column;}
+            #part2b {flex-direction: column;
+            margin-left: 0px;}
+            #search-bar {flex-direction: column;
+            margin-top: 10px;
+        justify-content: center;}
+            #part3 {flex-direction: column;}
+            #pic-1{width: 100%;  }
+            #search{width: 100%;}
+            body{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            #phone{margin-left: 0px;}
+            #menu{width: 100%;}
+            .item{width: 100%;}
+            #list{flex-wrap: wrap;
+            justify-content: center;}
+            #right{margin-right: 0px;}
+            #list{margin-right: 0px;}
+}
+    </style>
+</head>
+<body>
+    <div id="home">
+        <div id="list">
+            <h4>Home</h4>
+            <h4>Shop</h4>
+            <h4>Pages</h4>
+            <h4>Blog</h4>
+            <h4>Contact</h4>
+        </div>
+            <div id="right">
+                <img src="https://uxwing.com/wp-content/themes/uxwing/download/relationship-love/heart-icon.png" alt="like">
+                <img src="https://cdn-icons-png.flaticon.com/512/3916/3916639.png" alt="like">
+
+                <p>Item:<b>$150.00</b></p>
+            </div>
+    </div>
+    <div id="part2">
+        <div id="menu">
+            <div id="m-head">
+            <img src="https://cdn-icons-png.flaticon.com/512/7216/7216128.png" alt="menu">
+            <h4>All Department </h4>
+            </div>
+            <ul>
+                <li>Fruit</li>
+                <li>Fresh Meat</li>
+                <li>Fresh Bananas</li>
+                <li>Ocean Foods</li>
+                <li>Vegetables</li>
+                <li>Fastfood</li>
+                <li>Butter & Egg</li>
+            </ul>
+        </div>
+    
+    <div id="part2b">
+        <div id="search-bar">
+            <div id="search">
+                <h4>All Categories</h4>
+                <hr>
+                <p id="ask">What do you need?</p>
+                <p id="s-button">Search</p>
+            </div>
+            <div id="phone">
+                <div id="t-img">
+                <img src="https://cdn2.iconfinder.com/data/icons/font-awesome/1792/phone-512.png" alt="phone">
+                </div>
+                <div id="t-num">
+                    <p><b>+65 11.188.888</b></p>
+                    <p>Support 24/7 time</p>
+                </div>
+            </div>
+        </div>
+        <div id="pic-1">
+            <div id="l-text">
+                <h3>Fruit Fresh</h3>
+                <h1>
+                    Vegetable <br> 100% Organic
+                </h1>
+                <h4>Free Pickup and Delivery Available</h4>
+                <button>SHOP NOW</button>
+            </div>
+            
+
+        </div>
+    </div>
+    
+</div>
+<div id="part3">
+    <div class="item" id="item1">
+        <p>Fresh Fruits</p>
+
+    </div>
+    <div class="item" id="item2">
+        <p>Nut Gifts</p>
+
+    </div>
+    <div class="item" id="item3">
+        <p>Vegetables</p>
+
+    </div>
+    <div class="item" id="item4">
+        <p>Drink Fruits</p>
+
+    </div>
+
+</div>
+</body>
+</html>

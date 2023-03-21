@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: auto auto auto;
+            width: 800px;
+            height: 600px;
+            padding: 3px;
+            margin: 3px;
+                }
+        #container .c1{
+            background-color: gainsboro;
+            padding: 3px;
+            margin: 3px;
+            width: 200px;
+            height: 200px;
+        }
+        .sub1{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto;
+            
+        }
+        .sub2{
+            display: grid;
+            grid-template-columns: auto ;
+            grid-template-rows: auto auto;
+            
+        }
+        .sub3{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto ;
+            
+        }
+
+        #container .sub1 div{
+            background-color: gray;
+            padding: 2px;
+            margin: 2px;
+        }
+        #container .sub2 div{
+            background-color: gray;
+            padding: 2px;
+            margin: 2px;
+        }
+        #container .sub3 div{
+            background-color: gray;
+            padding: 2px;
+            margin: 2px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="c1">item1</div>
+        <div class="c1 sub1">
+            <div>sub1</div>
+            <div>sub2</div>
+            <div>sub3</div>
+            <div>sub4</div>
+        </div>
+        <div class="c1 sub1">
+            <div>sub1</div>
+            <div>sub2</div>
+            <div>sub3</div>
+            <div>sub4</div>
+        </div>
+        <div class="c1">item4</div>
+        <div class="c1">item5</div>
+        <div class="c1 sub2">
+            <div>sub1</div>
+            <div>sub2</div>
+        </div>
+        <div class="c1 sub3">
+            <div>sub1</div>
+            <div>sub2</div>
+        </div>
+        <div class="c1">item8</div>
+        <div class="c1 sub1">
+            <div>sub1</div>
+            <div>sub2</div>
+            <div>sub3</div>
+            <div>sub4</div>
+        </div>
+        <div class="c1">item10</div>
+        <div class="c1">item11</div>
+        <div class="c1 sub1">
+            <div>sub1</div>
+            <div>sub2</div>
+            <div>sub3</div>
+            <div>sub4</div>
+        </div>
+    </div>
+</body>
+</html>

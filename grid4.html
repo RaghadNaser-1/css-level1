@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(237, 234, 231);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+        }
+        #part1 {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: auto auto;
+            height: 555x;
+            padding: 5px;
+            margin: 5px;
+        }
+        .item1 {
+            grid-row: 1/span 2;
+            grid-column: 1/ span 2;
+            background-image: url(https://burst.shopifycdn.com/photos/man-talking-on-cellphone.jpg?width=1200&format=pjpg&exif=1&iptc=1);
+            /* background-color: aquamarine; */
+            background-size: cover;
+            padding: 5px;
+            padding-left: 15px;
+            text-shadow: 0 1px 1px black;
+            
+
+        }
+        .item2 {
+            background-image: url(https://media.istockphoto.com/id/1171926194/photo/portrait-of-nice-attractive-lovely-positive-glad-cheerful-cheery-family-wearing-casual-white.jpg?s=612x612&w=0&k=20&c=XC3_N3UCgCitp8m_york5lvnq3QvBBnrFQYtnYb7CAc=);
+            background-size: cover;
+            /* -webkit-transform: scaleX(-1);
+            transform: scaleX(-1); */
+        }
+        .item3 {
+            background-color:rgb(46, 175, 239) ;
+            padding: 5px;
+            padding-left: 15px;
+        }
+        .item4 {
+            background-color: rgb(26, 186, 26);
+            padding: 5px;
+            padding-left: 15px;
+        }
+        hr{
+            width: 30px;
+            border: 2px solid white;
+            margin-left: 5px;
+        }
+        .item5 {
+            background-image: url(https://c0.wallpaperflare.com/preview/999/847/733/man-using-his-smartphone.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .part2 {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            grid-template-rows: auto ;
+            padding: 5px;
+            margin: 5px;
+            gap: 5px;
+            color: black;
+        }
+        .part2 div {
+            background-color: white;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* width: 250px; */
+
+        }
+        .bc{
+            width: 50px;
+            height: 50px;
+            background-color: rgb(198, 193, 193);
+            border: 1px solid gray;   
+            margin: 5px;
+        }
+        .part2 img{
+            width: 40px;
+            height: 40px;
+        }
+        p{
+            width: 250px;
+        }
+        .orange{
+            color: orange;
+        }
+        .item1 h3,h2{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div id="part1">
+        <div class="p1c item1">
+            <p class="orange">Offers & Services</p>
+            <h1 class="orange">Offers and Services</h1>
+            <h2>stay connected to people in your life</h2>
+            <h3>Best 4G+ and unlimited internet bundles and features with orange mobile lines</h3>
+        </div>
+        <div class="p1c item2">
+            
+        </div>
+        <div class="p1c item3">
+            <h1>Orange Extra</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <hr>
+            <h3>Explore More</h3>
+        </div>
+        <div class="p1c item4">
+            <h1>Smart Life</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <hr>
+            <h3>Explore More</h3>
+        </div>
+        <div class="p1c item5">
+            
+        </div>
+    </div>
+    <div class="part2">
+        <div>
+            <div class="bc">
+            <img src="https://www.svgrepo.com/show/164980/cell-phone.svg" alt="icon">
+            </div>
+            <p>Mobile Offers</p>
+        </div>
+        <div>
+            <div class="bc">
+                <img src="https://www.svgrepo.com/show/164980/cell-phone.svg" alt="icon">
+                </div>
+            <p>Internet Offers</p>
+        </div>
+        <div>
+            <div class="bc">
+                <img src="https://www.svgrepo.com/show/164980/cell-phone.svg" alt="icon">
+                </div>
+            <p>Devices</p>
+        </div>
+        <div>
+            <div class="bc">
+                <img src="https://www.svgrepo.com/show/164980/cell-phone.svg" alt="icon">
+                </div>
+            <p>International</p>
+        </div>
+        <div>
+            <div class="bc">
+                <img src="https://www.svgrepo.com/show/164980/cell-phone.svg" alt="icon">
+                </div>
+            <p>Fixed Lines</p>
+        </div>
+
+    </div>
+</body>
+</html>

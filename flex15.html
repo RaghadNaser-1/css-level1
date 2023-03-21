@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{background-color: aliceblue;}
+        #div1{display: flex; justify-content: space-between; background-color: #448AFF; padding: 5px; align-items: center;}
+        #user{display: flex; align-items: center;}
+        #div1 img{width: 30px; height: 30px;}
+        #username{border: none; background-color: #448AFF;}
+        #user-pic{border-radius: 50px; width: 35px; height: 35px;}
+        #user img{margin: 5px; margin-right: 10px;}
+        .box-a img{width: 50px; height: 50px; margin-right: 50px;}
+        .box-a{display: flex;align-items: center; padding: 5px; background-color: white;width: 95%;justify-content: space-around; height: 75px;}
+        #box-1{display: grid; grid-template-columns: auto auto; grid-template-rows: auto auto; gap: 3px;width: 33%;margin: 10px;margin-left: 20px;}
+        #div2{display: flex;margin-top: 10px; margin-bottom: 10px;}
+        #icon1 img{width: 30px; height: 30px;}
+        #right1{width: 33%; margin: 10px;}
+        #box-b{display: flex; align-items: center; height: 75px; width: 100%; padding: 5px; border-radius: 10px; }
+        #icon1{background-color: #11C15B; width: 25%; height: 75px; align-items: center;display: flex;justify-content: center;}
+        #text1{background-color: #32ED80; width: 75%; height: 75px; align-items: start;display: flex;justify-content: space-around;flex-direction: column;padding-left: 10px; }
+        #text1 p{margin-top: -5px;}
+        #icon2{background-color: #448AFF; width: 25%; height: 75px; align-items: center;display: flex;justify-content: center;}
+        #text2{background-color: #91BAFF; width: 75%; height: 75px; align-items: start;display: flex;justify-content: space-around;flex-direction: column;padding-left: 10px; }
+        #text2 p{margin-top: -5px;}
+        #icon2 img{width: 30px; height: 30px;}
+        #m1 img{width: 30px; height: 30px; margin: 10px;}
+        #m1 p{margin: 10px;}
+        #m1{display: flex; justify-content: space-between;align-items: center;  height: 75px;background-color: white;}
+        #members{width: 50%;display: grid;grid-template-columns: auto;grid-template-rows:repeat(5,auto) ; gap: 2px; margin: 5px;}
+        #l-m2 img{border-radius: 50px; width: 50px; height: 50px; margin: 10px;}
+        #l-m2{display: flex; align-items: center;}
+        #r-m2 img{width: 30px; height:30px; margin: 10px;}
+        #r-m2{display: flex; align-items: center;}
+        #m2{display: flex; justify-content: space-between;height: 75px;background-color: white;}
+        #up-down img{width: 30px; height: 30px; margin: 10px;}
+        #up-down{display: flex; align-items: center;margin: -20px;}
+        #div3{display: flex;}
+        #numbers{width: 50%; margin: 5px;display: grid;grid-template-columns: auto auto;grid-template-rows:repeat(3,auto) ; gap: 20px;margin-left: 20px; }
+        #num1{background-color: white; height: 100px;display: flex;flex-direction: column;justify-content: center;align-items: center;padding: 5px;}
+        .red{text-align: left; background-color: #FF5252; height: 85px; padding: 10px;}
+        .green{text-align: left;background-color: #11C15B; height: 85px; padding: 10px;}
+        .small{font-size: 10px; text-align: right;}
+        .red h3{margin-top: -5px;margin-bottom: -5px;}
+        .green h3{margin-top: -5px;margin-bottom: -5px;}
+        #div4{background-color: white;padding: 5px; height: 130px; display: flex;margin-top: 20px;}
+        .percentage{margin: 10px; width: 25%;background-color: white;padding: 5px;}
+        
+        .values{display: flex; margin-top: -10px; margin-bottom: -5px;}
+        #color{color: #11C15B;margin-left: 15px;}
+        hr{width: 20%; text-align: left;border: 3px solid #FF5252;margin-right: 100%;}
+        #hr{background-color:aliceblue ;}
+        @media screen and (max-width: 925px) {
+            #div2{flex-direction: column;}
+            #box-1,#right1{width: 100%;}
+        }
+        @media screen and (max-width: 650px) {
+            #div3{flex-direction: column;}
+            #members,#numbers{width: 100%;}
+        }
+        @media screen and (max-width: 550px) {
+            #div4{flex-direction: column;background-color: aliceblue;}
+            .percentage{width: 100%;}
+        }
+
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <div>
+            <img src="https://cdn-icons-png.flaticon.com/512/98/98867.png" alt="zoom">
+        </div>
+        <div id="user">
+            <img src="https://cdn-icons-png.flaticon.com/512/4110/4110178.png" alt="bell">
+            <img id="user-pic" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHByb2ZpbGV8ZW58MHx8MHx8&w=1000&q=80" alt="user">
+            <select name="name" id="username">
+                <option value="John">John Doe</option>
+            </select>
+        </div>
+    </div>
+    <div id="div2">
+        <div id="box-1">
+            <div class="box-a">
+                <img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" alt="">
+                <div>
+                    <h2>10K</h2>
+                    <p>Visitors</p>
+                </div>
+            </div>
+            <div class="box-a">
+                <img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" alt="">
+                <div>
+                    <h2>10K</h2>
+                    <p>Visitors</p>
+                </div>
+            </div>
+            <div class="box-a">
+                <img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" alt="">
+                <div>
+                    <h2>10K</h2>
+                    <p>Visitors</p>
+                </div>
+            </div>
+            <div class="box-a">
+                <img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" alt="">
+                <div>
+                    <h2>10K</h2>
+                    <p>Visitors</p>
+                </div>
+            </div>
+        </div>
+        <div id="box-1">
+            <div class="box-a">
+                <img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" alt="">
+                <div>
+                    <h2>10K</h2>
+                    <p>Visitors</p>
+                </div>
+            </div>
+            <div class="box-a">
+                <img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" alt="">
+                <div>
+                    <h2>10K</h2>
+                    <p>Visitors</p>
+                </div>
+            </div>
+            <div class="box-a">
+                <img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" alt="">
+                <div>
+                    <h2>10K</h2>
+                    <p>Visitors</p>
+                </div>
+            </div>
+            <div class="box-a">
+                <img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" alt="">
+                <div>
+                    <h2>10K</h2>
+                    <p>Visitors</p>
+                </div>
+            </div>
+        </div>
+        <div id="right1">
+            <div id="box-b">
+                <div id="icon1">
+                    <img src="https://cdn-icons-png.flaticon.com/512/118/118669.png" alt="">
+                </div>
+                <div id="text1">
+                    <h2>4000+</h2>
+                    <p>Ratings Received</p>
+                </div>
+
+            </div>
+            <div id="box-b">
+                <div id="icon2">
+                    <img src="https://cdn-icons-png.flaticon.com/512/118/118669.png" alt="">
+                </div>
+                <div id="text2">
+                    <h2>4000+</h2>
+                    <p>Ratings Received</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="div3">
+        <div id="members">
+            <div id="m1">
+                <p>Members Performence</p>
+                <img src="https://cdn-icons-png.flaticon.com/128/7862/7862798.png" alt="">
+            </div>
+            <div id="m2">
+                <div id="l-m2">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8&w=1000&q=80" alt="shirley">
+                    <div>
+                        <h3>Shirley Hoe</h3>
+                        <p>Sales executive, NY</p>
+                    </div>
+                </div>
+                <div id="r-m2">
+                    <p><b>$78.001</b></p>
+                    <img src="https://cdn1.iconfinder.com/data/icons/social-messaging-ui-color/254000/42-512.png" alt="down">
+                </div>
+            </div>
+            <div id="m2">
+                <div id="l-m2">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8&w=1000&q=80" alt="shirley">
+                    <div>
+                        <h3>Shirley Hoe</h3>
+                        <p>Sales executive, NY</p>
+                    </div>
+                </div>
+                <div id="r-m2">
+                    <p><b>$78.001</b></p>
+                    <img src="https://cdn1.iconfinder.com/data/icons/social-messaging-ui-color/254000/42-512.png" alt="down">
+                </div>
+            </div>
+            <div id="m2">
+                <div id="l-m2">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8&w=1000&q=80" alt="shirley">
+                    <div>
+                        <h3>Shirley Hoe</h3>
+                        <p>Sales executive, NY</p>
+                    </div>
+                </div>
+                <div id="r-m2">
+                    <p><b>$78.001</b></p>
+                    <img src="https://cdn1.iconfinder.com/data/icons/social-messaging-ui-color/254000/42-512.png" alt="down">
+                </div>
+            </div>
+            <div id="m2">
+                <div id="l-m2">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8&w=1000&q=80" alt="shirley">
+                    <div>
+                        <h3>Shirley Hoe</h3>
+                        <p>Sales executive, NY</p>
+                    </div>
+                </div>
+                <div id="r-m2">
+                    <p><b>$78.001</b></p>
+                    <img src="https://cdn1.iconfinder.com/data/icons/social-messaging-ui-color/254000/42-512.png" alt="down">
+                </div>
+            </div>
+
+        </div>
+        <div id="numbers">
+            <div id="num1">
+                <p><b>Total Subscription</b></p>
+                <div id="up-down">
+                    <img src="https://cdn1.iconfinder.com/data/icons/social-messaging-ui-color/254000/42-512.png" alt="down">
+                    <h2>7652</h2>
+                </div>
+                <p>48% From Last 24 Hours</p>
+            </div>
+            <div id="num1">
+                <p><b>Total Subscription</b></p>
+                <div id="up-down">
+                    <img src="https://cdn1.iconfinder.com/data/icons/social-messaging-ui-color/254000/42-512.png" alt="down">
+                    <h2>7652</h2>
+                </div>
+                <p>48% From Last 24 Hours</p>
+            </div>
+            <div  class="red">
+                <p class="small">15%</p>
+                <h3>489</h3>
+                <p>Total Comment</p>
+            </div>
+            <div  class="green">
+                <p class="small">20%</p>
+                <h3>$5782</h3>
+                <p>Income Status</p>
+            </div>
+            <div id="num1">
+                <p>Total Subscription</p>
+                <div id="up-down">
+                    <img src="https://cdn1.iconfinder.com/data/icons/social-messaging-ui-color/254000/42-512.png" alt="down">
+                    <h2>7652</h2>
+                </div>
+                <p>48% From Last 24 Hours</p>
+            </div>
+            <div id="num1">
+                <p>Total Subscription</p>
+                <div id="up-down">
+                    <img src="https://cdn1.iconfinder.com/data/icons/social-messaging-ui-color/254000/42-512.png" alt="down">
+                    <h2>7652</h2>
+                </div>
+                <p>48% From Last 24 Hours</p>
+            </div>
+        </div>
+
+    </div>
+    <div id="div4">
+        <div class="percentage">
+            <p>Published Project</p>
+            <div class="values">
+                <h3>532</h3>
+                <h3 id="color">+1.69%</h3>
+            </div>
+            <div id="hr">
+            <hr id="one">
+            </div>
+        </div>
+        <div class="percentage">
+            <p>Published Project</p>
+            <div class="values">
+                <h3>532</h3>
+                <h3 id="color">+1.69%</h3>
+            </div>
+            <div id="hr">
+            <hr id="one">
+            </div>
+        </div>
+        <div class="percentage">
+            <p>Published Project</p>
+            <div class="values">
+                <h3>532</h3>
+                <h3 id="color">+1.69%</h3>
+            </div>
+            <div id="hr">
+            <hr id="one">
+            </div>
+        </div>
+        <div class="percentage">
+            <p>Published Project</p>
+            <div class="values">
+                <h3>532</h3>
+                <h3 id="color">+1.69%</h3>
+            </div>
+            <div id="hr">
+            <hr id="one">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

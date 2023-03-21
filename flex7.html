@@ -10,16 +10,17 @@
             width: 20px;
             height: 20px;
             padding: 10px;
-            margin-top: 7px;
+            /* margin-top: 7px; */
 
         }
         #head img {
             width: 25px;
             height: 25px;   
             padding: 10px;
-            margin-top: 15px;
+            /* margin-top: 15px; */
 
         }
+
         #side {
             background-color: rgb(0, 119, 255);
             width: 20%;
@@ -43,15 +44,18 @@
         }
         .choice {
             display: flex;
-            margin: 5px;
-            padding: 5px;
+            /* margin: 5px; */
+            /* padding: 5px; */
             justify-content: center;
+            align-items: center;
+
                     }
         #head {
             display: flex;
             margin: 5px;
             padding: 5px;
-            /* justify-content: flex-start; */
+            align-items: center;
+
         }
         #user {
             display: flex;
@@ -63,6 +67,8 @@
         #title {
             display: flex;
             justify-content: space-between;
+            align-items: center;
+
         }
         #name {
             margin-right: 20px;
@@ -84,12 +90,29 @@
         }
         #boxes {
             display: flex;
+            margin-top: 8px;
         }
         #top {
             width: 68%;
             height: 450px;
             background-color: rgb(0, 119, 255);
 
+        }
+        span{
+            color: red;
+        }
+        #circle{
+            padding-top: 70px;
+            font-size: 50px;
+        }
+        .line2{
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            color: black;
+            border-radius: 50%;
+            text-align: center;
+            margin-left: 75px;
         }
         #total {
             width: 28%;
@@ -133,13 +156,22 @@
         #total {
             padding: 5px;
         }
+        #p2 {
+            color: red;
+            background-color: white;
+            padding: 5px;
+        }
+        .first{
+            background-color: rgb(32, 61, 129);
+
+        }
     </style>
 </head>
 <body>
     <div id="side">
-        <h1>M-SoftTech</h1>
+        <h1><span>M</span>-SoftTech</h1>
         <div id="menu"> 
-        <div class="choice"> 
+        <div class="choice first"> 
             <img src="https://cdn-icons.flaticon.com/svg/3917/3917033.svg?token=exp=1678733732~hmac=43c02cc23f4a76f987b122e41628576b" alt="home">
             <p>Dashboard</p>
         </div>
@@ -205,7 +237,7 @@
     <div id="last">
         <div id="top">
             <div class="line1">
-                <h3>Top Selling Projects</h3>
+                <h3><span>Top Selling Projects</span></h3>
                 <p id="p2">Sell All</p>
             </div>
             <table>
@@ -240,8 +272,12 @@
         </div>
         <div id="total">
             <div class="line1">
-                <h3>Total Sales</h3>
+                <h3><span>Total Sales</span></h3>
                 <p id="p2">Sell All</p>
+            </div>
+            <div class="line2">
+                <p id="circle">70%</p>
+
             </div>
 
         </div>
